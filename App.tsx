@@ -27,6 +27,8 @@ export default function App() {
       </View>
       {/*Fim do header*/}
 
+      <ScrollView horizontal={false}>
+      
       {/* Inicio do Stories */}
 
       <View style={estilo.stories}>
@@ -80,6 +82,52 @@ export default function App() {
 
       </View>
       {/* Fim dos Stories */}
+
+      {/* Início do Trending */}
+      <View style={estilo.trending}>
+
+        <View style={estilo.cxtitulo}>
+          <Text style={estilo.trendingtitulo}>
+            Trending
+          </Text>
+          <Image source={require("./assets/more.png")} style={estilo.trendingmore}/> 
+        </View>
+
+        <View style={estilo.cxtrendingdetalhe}>
+          <View>
+            <Image source={{uri:"https://magazine.zarpo.com.br/wp-content/uploads/2019/02/A-sensacao-de-saltar-de-paraquedas-1200x900.jpg"}} style={estilo.detalheimg}/>
+            <Text style={estilo.detalhelike}>Like</Text>
+          </View>
+
+        <View style={estilo.trendingusuario}>
+          <Image source={{uri:"https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"}} style={estilo.trendingusuarioimg}/>
+          <View>
+            <Text style={estilo.trendingusuariotitulo}>João Miguel</Text>
+            <Text style={estilo.trendingusuariosub}>2 minutos atrás</Text>
+          </View>
+
+          
+
+        </View>
+
+        <Text style={estilo.trendingobs}>
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet in dolorem,
+          ducimus quasi accusamus magnam optio culpa unde deserunt aliquid corporis
+          suscipit distinctio vel similique? Repellendus eligendi sit distinctio maxime.
+
+          </Text>
+
+
+      </View>
+      
+      </View>
+
+      {/* Fim do Trending */}
+
+
+      {/* Todos os elementos devem ficar acima do ScrollView */}
+      </ScrollView>
 
 
     </View>
